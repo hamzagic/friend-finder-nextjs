@@ -8,13 +8,13 @@ export default function Home() {
     const btnStyle = {}
   return (
     <main>
-      <Header />
+      <Header showGetStarted={true} />
         <div className={styles.container}>
             <div className={styles.left}>
                 <h1 className={styles.heading}>Explore and engage with</h1>
                 <p>Connect with others based on interests.</p>
                 <div className={styles.btnContainer}>
-                    <Button title="Get started" additionalStyle={btnStyle} />
+                    <a href="/signup"><Button title="Get started" role='default' path='/signup' /></a>
                 </div>
             </div>
             <div className={styles.right}>

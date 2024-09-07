@@ -18,5 +18,8 @@
     align-items: center;
     column-gap: 20px;
     list-style: none;
+    .anchor:hover {
+      color: var(--anchor-hovered);
+    }
   }
 }

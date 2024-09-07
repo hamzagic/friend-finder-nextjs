@@ -1,13 +1,19 @@
+'use client';
 import styles from './header.module.css';
 import Button from '@/components/button/Button';
 
-function Header() {
+type Props = {
+    showGetStarted: boolean
+}
+
+function Header({ showGetStarted }: Props) {
+    const clickHandler = () => {
+        window.location.href = '/'
+    }
     return (
         <div className={styles.container}>
-            <div>
-                Friend Finder
-            </div>
-            <Button title="Get Started" />
+            <div className={styles.logo} onClick={clickHandler}>Friend Finder</div>
+            {showGetStarted && <a href="/signup"><Button title="Get Started" role='default' /></a>}
         </div>
     );
 }

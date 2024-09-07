@@ -5,3 +5,7 @@
     width: 100%;
     padding: 10px 4rem;
 }
+
+.logo {
+    cursor: pointer;
+}

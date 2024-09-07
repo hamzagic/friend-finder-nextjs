@@ -3,11 +3,26 @@
     padding: 15px 32px;
     border-radius: 8px;
     font-size: 16px;
-    background-color: var(--background-btn-primary);
     cursor: pointer;
     font-weight: 500;
 }
 
-.btn:hover {
-    background-color: var(--btn-hovered);
+.darkBackground {
+    background-color: var(--background-main);
+    padding: 8px 32px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.darkBackground:hover {
+    background-color: var(--background-main-hovered);
+}
+
+.defaultBackground {
+    background-color: var(--background-btn-primary);
+}
+
+.defaultBackground:hover {
+    background-color: var(--btn-hovered);;
 }
